@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal website</title>
+<link rel="stylesheet" type="text/css" href="../static/firstcss.css">
+
+ </head>
+
+<body>
+	<h1> Welcome !</h1>
+	<img id ="im" src="../static/osama.jpeg">
+ <button id="But" onclick= 'visible()''> Click Here for some details and the photo </button>
+
+	<script>
+		var i = 0;
+		function visible() {
+			i+=1;
+			if(i%2 == 1){
+				document.getElementById("im").style.display = 'block';
+				document.getElementById('lists').style.display = 'block';
+
+			} else {
+				document.getElementById("im").style.display = 'none';
+				document.getElementById('lists').style.display = 'none';
+			}
+
+
+
+}
+
+	</script>
+	<ul id="lists">
+
+
+		<li>I love cats</li>
+		<li>I love sleeping</li>
+		<li>I don't like fish at all</li>
+
+	</ul> 
+	<a href="https://facebook.com/osamaalosta8">Facebook account</a>
+
+
+</body>
+</html>

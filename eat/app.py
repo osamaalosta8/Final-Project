@@ -1,4 +1,5 @@
 from flask import Flask ,render_template , request
+
 app=Flask(__name__)
 # userdb= dataset.connect("sqlite:///data.db")
 # usertable = db('user')
@@ -31,5 +32,9 @@ def why():
 @app.route("/about")
 def about():
 	return render_template('about.html')
+@app.route("/submit" , methods =['POST'])
+def submit():
+	user = request.form['Name']
+	return render_template('submit.html', username=user)
 if __name__ == '__main__':
-	app.run(port=5000,debug=True)
+	app.run(port=8000,debug=True)

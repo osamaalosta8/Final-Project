@@ -1,0 +1,26 @@
+#firstn{
+	padding: 10px;
+}
+#phonen{
+	padding: 7px;
+}
+#nameof{
+	padding: 7px;
+}
+#order{
+	padding: 10px;
+}
+#addres{
+	padding: 12px;
+}
+label{
+	margin-right: 10px;
+
+}
+input{
+	margin: 10px;
+	margin-top: 10px;
+}
+body {
+	background-color: gray;
+}

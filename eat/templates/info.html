@@ -2,39 +2,40 @@
 <html>
 <head>
 	<title>Sign up</title>
-	<link rel="stylesheet" type="text/css" href=../static/signup.css>
+	<link rel="stylesheet" type="text/css" href=../static/submit.css>
 </head>
 <body>
+	<div class ="basic">
 
 	<form action="/submit" method ="POST" >
-		<div>
-		<label>Your Name</label>
-		<input type ="text" name = "Name" placeholder="Enter Your Name">
+		<div >
+		<label id ="firstn">Your Name</label>
+		<input  type ="text" name = "Name" placeholder="Enter Your Name">
 	<br>
 	
-		<label>Phone Number</label>
-		<input type="text" name="PhoneNumber" placeholder="Enter Your PhoneNumber">
+		<label id="phonen" >Phone Number</label>
+		<input  type="text" name="PhoneNumber" placeholder="Enter Your PhoneNumber">
 <br>
 	</div>
 	<br>
-	</div>
+
 		<div>
-		<label>The resturants</label>
-		<input type="text" name="resturant" placeholder="The resturant">
+		<label id = "nameof">The resturants</label>
+		<input  type="text" name="resturant" placeholder="The resturant">
 
 	</div>
 		<div>
-		<label>Your order</label>
+		<label  id = "order">Your order</label>
 		<input type="text" name="order" placeholder="Enter your Order">
 <br>
 	<div>
-		<label>Addres</label>
+		<label  id="addres">Addres</label>
 		<input type="text" name="Addres" placeholder="Enter your Addres">
 
 	</div>
 
 	<br>
-	<input id ="order" type="submit" name="submit" value="Order Now">
-
+	<input id ="submiting" type="submit" name="submit" value="Order Now">
+</div>
 </body>
 </html>
